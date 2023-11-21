@@ -1,6 +1,6 @@
 # nutriyou
  Projekt für Ineraktive Medien 1 | FHGR
 
-# Dokumentation
-### 1. Idee
-Die Idee ist es...
+### Was ist das Ziel des Projekts?
+### Was waren Stolpersteine?
+### Welche Ressourcen wurden genutzt?
