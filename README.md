@@ -3,4 +3,4 @@
 
 ### Was ist das Ziel des Projekts?
 ### Was waren Stolpersteine?
-### Welche Ressourcen wurden genutzt?
+### Welche Ressourcen wurden genutzt? 
