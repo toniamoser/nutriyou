@@ -1,0 +1,39 @@
+.button-grey {
+    display: flex;
+    background-color: #333333;
+     font-size: 20px;
+    font-weight: 700;
+    color: white;
+     cursor: pointer;
+     padding: 10px 20px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     border-radius: 96px;
+     border: none;
+ }
+ 
+ .button-grey:hover {
+    background-color:#000;
+    color: white;
+ }
+
+ .header-pic-subpage {
+    overflow: hidden;
+    max-width: 100%; /* Adjust as needed */
+    right: -160px;
+ }
+
+ .header-pic-subpage img {
+    width: 100%;
+    height: auto;
+ }
+
+ .funktion {
+    max-width: 50%;
+ }
+
+ .vorteil {
+    padding: 12px 0px;
+    gap: 20px;
+ }

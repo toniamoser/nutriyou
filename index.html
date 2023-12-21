@@ -10,9 +10,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <nav>
-        <iframe src="navbar.html" frameborder="0" width="100%"></iframe>
-    </nav>
+    <header>
+        <div class="logo">
+            <img src="img/navbar/provisorisch.svg" alt="Logo"> <a href="index.html"></a>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="angebot.html">Angebot</a></li>
+                <li> <a href="ueberuns.html">Über uns</a></li>
+                <li>
+                    <button class="outline-button">Jetzt loslegen! <a href="https://www.apple.com/chde/app-store/"></a></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
 <main>
     <section class="header">
         <section class="header-text">
@@ -47,7 +59,7 @@
                 <h3>Dein ganz persönlicher Berater</h3>
                 <p>Wenn du mal nicht mehr weiter weisst, hol dir Support von Codie, deinem KI-Buddy. Er lernt dich immer besser kennen und hat jederzeit die passenden Tipps ready.</p>
             </div>
-            <button class="outline-button">Mehr erfahren</button>
+            <button class="outline-button"> Mehr erfahren</button> 
         </div>
     </section>
 
@@ -110,38 +122,44 @@
 
 
     </section>
-      <div class="footer-grid">
+      <div class="footer-container">
        
-            <section>
-              <img src="img/navbar/Logo_neg.svg" alt="Logo">
+            <section class="footer-logo">
+              <img class="footerlogo" src="img/navbar/Logo_neg.svg" alt="Logo nutriyou">
+            </section>
+    
+           <section class="footer-contact">
+                <div>
+                    <p class="p-small-bold"> nutiryou </p>
+                    <p class="p-small"> Brokkolistrasse 22</p>
+                    <p class="p-small"> 7899 Tomatenhausen</p>
+                </div>
+                <div>
+                    <p class="p-small"> 079 833 39 00</p>
+                    <p class="p-small"> hallo@nutriyou.ch</p>
+                </div>
             </section>
 
-            <section></section>
-    
-           <section>
-                <p class="p-small-bold"> nutiryou </p>
-                <p class="p-small"> Brokkolistrasse 22</p>
-                <p class="p-small"> 7899 Tomatenhausen</p>
-                <p class="p-small"> 079 833 39 00</p>
-                <p class="p-small"> hallo@nutriyou.ch</p>
-            </section>
-
-            <section></section>
-    
            <section class="footernav">
-             <p class="p-small-bold"> <a href="#">Angebot</a></p>
+             <ul class="p-small-bold"> <a href="angebot.html">Angebot</a></ul>
              <hr class="divider">
-             <p class="p-small-bold"> <a href="#">Über uns</a> </p>
+             <ul class="p-small-bold"> <a href="ueberuns.html">Über uns</a> </ul>
              <hr class="divider">
-             <p class="p-small-bold"> <a href="#">Kontakt</a> </p>
+             <ul class="p-small-bold"> <a href="#">Kontakt</a> </ul>
            </section>
-
-           <section></section>
     
-           <section>
-              <p class="textlink"> <a href="#">Impressum</a></p>
-              <p class="textlink"> <a href="#">Datenschutz</a></p>
-              <p class="textlink"> <a href="#">AGB</a></p>
+           <section class="footerlinks">
+            <div class="impressum">
+              <ul class="textlink"> <a href="#">Impressum</a></ul>
+              <ul class="textlink"> <a href="#">Datenschutz</a></ul>
+              <ul class="textlink"> <a href="#">AGB</a></ul>
+            </div>
+            <div class="socials">
+                <img class="smicon" src="img/footer/socials/instagram.svg">
+                <img class="smicon" src="img/footer/socials/tiktok.svg">
+                <img class="smicon" src="img/footer/socials/linkedin.svg">
+                <img class="smicon" src="img/footer/socials/facebook.svg">
+            </div>
             </section>
        </div>
       
