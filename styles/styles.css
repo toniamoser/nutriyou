@@ -4,6 +4,19 @@ body {
     color: white;
 }
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+    padding: 0px 150px;
+    position: relative;
+}
+
 h1 {
     font-family: Montserrat;
 font-size: 70px;
@@ -26,6 +39,7 @@ font-size: 25px;
 font-style: normal;
 font-weight: 700;
 line-height: 35px; /* 140% */
+margin-bottom: 0px;
 }
 
 h4 {
@@ -48,14 +62,24 @@ line-height: 28px; /* 155.556% */
     line-height: 23px;
 }
 
+.review {
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+}
+
 .p-small-bold {
     font-size: 15px;
     line-height: 23px;
     font-weight: 700;
 }
 
+.centered {
+    text-align: center;
+}
 
-/* HEADER */
+
+/* nav */
 header {
     color: white;
     padding: 10px;
@@ -97,7 +121,6 @@ font-weight: 700;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-size: 1em;
     border-radius: 96px;
     border: 3px solid var(--vibrant-orange, #F4743B);
 }
@@ -113,22 +136,18 @@ font-weight: 700;
     background-color: #F4743B;
   }
   
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr 2fr 1fr 2fr 2fr;
-    grid-auto-rows: auto;
-    grid-gap: 20px;
-    margin: 0 auto;
+  .footer-container {
+    display: flex;
     max-width: 100%;
-    padding-left: 150px;
+    padding: 40px 150px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 20px;
   }
 
   .textlink {
     text-decoration: underline;
-  }
-
-  .footernav{
-    justify-content: left;
   }
 
   hr.divider {
@@ -138,8 +157,183 @@ font-weight: 700;
     max-width: 80px;
   }
 
+  .smicon {
+    max-width: 30px;
+  }
+
+  .footer-logo {
+    flex: 4;
+  }
+
+  .footerlogo {
+    max-width: 75%;
+  }
+
+  .footer-contact {
+    flex: 3;
+  }
+
+  .footernav {
+    flex: 3;
+  }
+
+  .footerlinks {
+    flex: 2;
+  }
+
   @media (max-width: 1024px) {
-    .footer-grid {
+    .footer-container {
       padding-left: 20px;
     }
   }
+
+
+  /* App download footer*/
+  .app-download {
+    background-color: #333333;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+
+  .download {
+    max-width: 10%;
+  }
+
+  .store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+
+  /* header */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .header-text {
+    max-width: 50%;
+  }
+
+  .header-pic img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+  }
+
+  .download-home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 35%;
+  }
+
+  /* funktionen teaser */
+  .teaser {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 200px;
+  }
+
+  .img-teaser {
+    width: 50%;
+  }
+
+  .teaser-text {
+    max-width: 50%;
+  }
+
+  /* partner */
+
+  .partnerfirmen {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+}
+
+.partner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    right: -160px;
+    background: linear-gradient(to right, transparent, #222);
+}
+
+.partner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    left: -160px;
+    background: linear-gradient(to left, transparent, #222);
+}
+
+  .partnerlogo {
+    max-width: 10%;
+  }
+
+
+/*Bewertungen*/
+.reviews {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.bewertung {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    margin: 0px -150px;
+}
+
+.bewertung1 {
+    background-color: #333333;
+    border-radius: 50px;
+    display: flex;
+    padding: 35px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 33%;
+}
+
+.bewertung::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    right: -20px;
+    background: linear-gradient(to right, transparent, #222);
+}
+
+.bewertung::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    left: -20px;
+    background: linear-gradient(to left, transparent, #222);
+}
