@@ -88,6 +88,7 @@ header {
     align-items: center;
 }
 
+
 .logo img {
     height: 80px; /* Adjust the height as needed */
 }
@@ -245,7 +246,7 @@ font-weight: 700;
   }
 
   .img-teaser {
-    width: 50%;
+    width: 40%;
   }
 
   .teaser-text {
@@ -337,3 +338,4 @@ font-weight: 700;
     left: -20px;
     background: linear-gradient(to left, transparent, #222);
 }
+
