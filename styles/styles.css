@@ -72,6 +72,7 @@ line-height: 28px; /* 155.556% */
     font-size: 15px;
     line-height: 23px;
     font-weight: 700;
+    padding: 0;
 }
 
 .centered {
@@ -104,7 +105,7 @@ nav li {
     font-size: 20px;
 }
 
-nav a {
+   a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -145,10 +146,12 @@ font-weight: 700;
     justify-content: flex-start;
     align-items: left;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .textlink {
     text-decoration: underline;
+    padding: 0;
   }
 
   hr.divider {
@@ -156,6 +159,7 @@ font-weight: 700;
     background-color: #ffffff; /* Farbe der Linie */
     border: none;
     max-width: 80px;
+    margin: 0;
   }
 
   .smicon {
@@ -266,6 +270,9 @@ font-weight: 700;
     justify-content: center;
     gap: 100px;
     position: relative;
+    @media (max-width:900px) {
+      flex-wrap: wrap;
+    }
 }
 
 .partner::before {
@@ -305,7 +312,12 @@ font-weight: 700;
     justify-content: center;
     gap: 20px;
     position: relative;
-    margin: 0px -150px;
+    margin-left: -50px;
+    width: 100vw;
+
+    /* carousell? */
+    overflow: scroll;
+
 }
 
 .bewertung1 {
@@ -319,7 +331,7 @@ font-weight: 700;
     min-width: 33%;
 }
 
-.bewertung::before {
+/* .bewertung::before {
     content: "";
     position: absolute;
     top: 0;
@@ -337,5 +349,5 @@ font-weight: 700;
     width: 20%;
     left: -20px;
     background: linear-gradient(to left, transparent, #222);
-}
+} */
 
