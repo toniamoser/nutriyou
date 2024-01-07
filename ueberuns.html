@@ -1,32 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns</title>
     <link rel="stylesheet" href="styles/ueberuns.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <iframe src="navbar.html" frameborder="0" width="100%"></iframe>
-    <h1>Wir sind mehr als nur eine App</h1> 
-    <p>Wir streben danach, dir das Leben in Bezug auf eine massgeschneiderte, individuelle und gesunde Ernährung bestmöglich zu erleichtern. In Zusammenarbeit mit verschiedenen Lebensmittelgeschäften möchten wir dir eine informative, aber dennoch verständliche Plattform bieten.</p>
-    <button class="outline-button">Kontakt aufnehmen</button>
-    <img src="img/ueberuns/maria.png" alt="Portraitfoto Maria Reichmuth">
-    <img src="img/ueberuns/timo.png" alt="Portraitfoto Timo Steiner">
-    <img src="img/ueberuns/tonia.png" alt="Portraitfoto Tonia Moser">
-    <h2>Unsere Partner</h2>
-    <img src="img/ueberuns/Partner/Partner.png" class="partner-image" alt="Partner">
-    <h2>Unsere Werte</h2>
-    <h3>benutzerfreundlich</h3> <p>Die User Experience steht im Mittelpunkt, um Kunden zufriedenzustellen und langfristige Bindungen aufzubauen.</p>
-    <h3>direkt</h3> <p>Wir kommunizieren offen und transparent, sowohl intern als auch gegenüber Kunden, Partnern und Stakeholdern.</p>
-    <h3>vernetzt</h3> <p>Wie fördern eine Kultur, in der Mitarbeiterinnen und Mitarbeiter aktiv zusammenarbeiten, um gemeinsame Ziele zu erreichen.</p>
-    <h2>Starte dein gesundes Leben jetzt!</h2>
-    <p>Einmalig 10 CHF. Keine In-App Käufe.</p>
-    <img src="img/appleandroidbutton.png" alt="Apple Logo, laden im Appstore / Google Logo, Jetzt bei Google Play">
+    <header>
+        <!-- Ihr Header-Inhalt -->
+        <iframe src="navbar.html" frameborder="0" width="100%"></iframe>
+    </header>
+
+    <div class="team-container">
+        <div class="team-member">
+            <div class="image-container">
+                <img src="img/ueberuns/maria.png" alt="Portraitfoto Maria Reichmuth" class="static-image">
+                <img src="img/ueberuns/gifs/maria.gif" alt="Maria Reichmuth GIF" class="hover-gif">
+            </div>
+            <h3>Maria Reichmuth</h3>
+            <p>PR-Managerin</p>
+        </div>
+    
+        <div class="team-member">
+            <div class="image-container">
+                <img src="img/ueberuns/timo.png" alt="Portraitfoto Timo Steiner" class="static-image">
+                <img src="img/ueberuns/gifs/timo.gif" alt="Timo Steiner GIF" class="hover-gif">
+            </div>
+            <h3>Timo Steiner</h3>
+            <p>Content Creator</p>
+        </div>
+    
+        <div class="team-member">
+            <div class="image-container">
+                <img src="img/ueberuns/tonia.png" alt="Portraitfoto Tonia Moser" class="static-image">
+                <img src="img/ueberuns/gifs/tonia.gif" alt="Tonia Moser GIF" class="hover-gif">
+            </div>
+            <h3>Tonia Moser</h3>
+            <p>Art Director</p>
+        </div>
+    </div>
+        <section class="partnerfirmen">
+            <h2 class="centered">Unsere Partner</h2>
+            <section class="partner">
+                <img class="partnerlogo" src="img/partner/togoodtogo.svg">
+                <img class="partnerlogo" src="img/partner/planted.svg">
+                <img class="partnerlogo" src="img/partner/migros.svg">
+                <img class="partnerlogo" src="img/partner/alnatura.svg">
+                <img class="partnerlogo" src="img/partner/migros.svg">
+                <img class="partnerlogo" src="img/partner/togoodtogo.svg">
+                <img class="partnerlogo" src="img/partner/planted.svg">
+                <img class="partnerlogo" src="img/partner/migros.svg">
+            </section>
+        </section>
+
+        <h2>Unsere Werte</h2>
+        <h3>benutzerfreundlich</h3> 
+        <p>Die User Experience steht im Mittelpunkt, um Kunden zufriedenzustellen und langfristige Bindungen aufzubauen.</p>
+        <h3>direkt</h3> 
+        <p>Wir kommunizieren offen und transparent, sowohl intern als auch gegenüber Kunden, Partnern und Stakeholdern.</p>
+        <h3>vernetzt</h3> 
+        <p>Wie fördern eine Kultur, in der Mitarbeiterinnen und Mitarbeiter aktiv zusammenarbeiten, um gemeinsame Ziele zu erreichen.</p>
+    </div>
+
+    <footer id="footer-main">
+        <section class="app-download">
+            <h2>Starte dein gesundes Leben jetzt!</h2>
+            <p>Einmalig 10 CHF. Keine In-App Käufe.</p>
+            <section class="store"> <img class="download" src="img/footer/appstore.svg" alt="Appstore download">
+                <img class="download" src="img/footer/playstore.svg" alt="Playstore download">
+            </section>
+        </section>
+        <div class="footer-container">
+            <section class="footer-logo">
+                <img class="footerlogo" src="img/navbar/Logo_neg.svg" alt="Logo nutriyou">
+            </section>
+            <section class="footer-contact">
+                <div>
+                    <p class="p-small-bold"> nutiryou </p>
+                    <p class="p-small"> Brokkolistrasse 22</p>
+                    <p class="p-small"> 7899 Tomatenhausen</p>
+                </div>
+                <div>
+                    <p class="p-small"> 079 833 39 00</p>
+                    <p class="p-small"> hallo@nutriyou.ch</p>
+                </div>
+            </section>
+            <section class="footernav">
+                <ul class="p-small-bold"> <a href="angebot.html">Angebot</a></ul>
+                <hr class="divider">
+                <ul class="p-small-bold"> <a href="ueberuns.html">Über uns</a> </ul>
+                <hr class="divider">
+                <ul class="p-small-bold"> <a href="#">Kontakt</a> </ul>
+            </section>
+            <section class="footerlinks">
+                <div class="impressum">
+                    <ul class="textlink"> <a href="#">Impressum</a></ul>
+                    <ul class="textlink"> <a href="#">Datenschutz</a></ul>
+                    <ul class="textlink"> <a href="#">AGB</a></ul>
+                </div>
+                <div class="socials">
+                    <img class="smicon" src="img/footer/socials/instagram.svg">
+                    <img class="smicon" src="img/footer/socials/tiktok.svg">
+                    <img class="smicon" src="img/footer/socials/linkedin.svg">
+                    <img class="smicon" src="img/footer/socials/facebook.svg">
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
-<footer> <iframe src="footer.html" frameborder="0" width="100%"></iframe></footer>
 </html>
