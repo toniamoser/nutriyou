@@ -1,0 +1,79 @@
+/*		Footer	*/
+#footer-main {
+    background-color: #F4743B;
+  }
+  
+  .footer-container {
+    display: flex;
+    max-width: 100%;
+    padding: 40px 150px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .textlink {
+    text-decoration: underline;
+    padding: 0;
+  }
+
+  hr.divider {
+    height: 1.5px;
+    background-color: #ffffff; /* Farbe der Linie */
+    border: none;
+    max-width: 80px;
+    margin: 0;
+  }
+
+  .smicon {
+    max-width: 30px;
+  }
+
+  .footer-logo {
+    flex: 4;
+  }
+
+  .footerlogo {
+    max-width: 75%;
+  }
+
+  .footer-contact {
+    flex: 3;
+  }
+
+  .footernav {
+    flex: 3;
+  }
+
+  .footerlinks {
+    flex: 2;
+  }
+
+  @media (max-width: 1024px) {
+    .footer-container {
+      padding-left: 20px;
+    }
+  }
+
+
+  /* App download footer*/
+  .app-download {
+    background-color: #333333;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+
+  .download {
+    max-width: 10%;
+  }
+
+  .store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }

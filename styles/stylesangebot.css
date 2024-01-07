@@ -35,5 +35,12 @@
 
  .vorteil {
     padding: 12px 0px;
-    gap: 20px;
+ }
+
+ .vorteil h4 {
+   margin: 0;
+ }
+ .vorteil h4::before {
+   content: url('../img/angebot/Haken.svg');
+   padding-right: .75rem;
  }
