@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns</title>
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/typo.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/ueberuns.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,61 +15,101 @@
 </head>
 <body>
     <header>
-        <!-- Ihr Header-Inhalt -->
-        <iframe src="navbar.html" frameborder="0" width="100%"></iframe>
+            <div class="logo">
+                 <a href="index.html"><img src="img/navbar/provisorisch.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="angebot.html">Angebot</a></li>
+                    <li> <a href="ueberuns.html">Über uns</a></li>
+                    <li>
+                        <button class="outline-button">Jetzt loslegen! <a href="https://www.apple.com/chde/app-store/"></a></button>
+                    </li>
+                </ul>
+            </nav>
     </header>
 
-    <div class="team-container">
-        <div class="team-member">
-            <div class="image-container">
-                <img src="img/ueberuns/maria.png" alt="Portraitfoto Maria Reichmuth" class="static-image">
-                <img src="img/ueberuns/gifs/maria.gif" alt="Maria Reichmuth GIF" class="hover-gif">
-            </div>
+    <div class="content-container">
+        <div class="text-container">
+            <h1 class="h1">Wir sind mehr als nur eine App</h1>
+            <p class="p-titel">Wir streben danach, dir das Leben in Bezug auf eine massgeschneiderte, individuelle und gesunde Ernährung bestmöglich zu erleichtern. In Zusammenarbeit mit verschiedenen Lebensmittelgeschäften möchten wir dir eine informative, aber dennoch verständliche Plattform bieten.</p>
+            <button class="button-grey">Kontakt aufnehmen</button>
+        </div>
+    
+        <div class="video-container">
+            <video id="meinVideo" controls poster="img/ueberuns/Team_alle-min.png">
+                <source src="video/ueberuns1.mp4" type="video/mp4">
+                Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+        </div>
+    </div>
+
+<div class="team-container">
+    <div class="team-member">
+        <div class="image-container">
+            <img src="img/ueberuns/maria.png" alt="Portraitfoto Maria Reichmuth" class="static-image">
+            <img src="img/ueberuns/gifs/maria.gif" alt="Maria Reichmuth GIF" class="hover-gif">
+        </div>
+        <div class="text-container">
             <h3>Maria Reichmuth</h3>
             <p>PR-Managerin</p>
         </div>
-    
-        <div class="team-member">
-            <div class="image-container">
-                <img src="img/ueberuns/timo.png" alt="Portraitfoto Timo Steiner" class="static-image">
-                <img src="img/ueberuns/gifs/timo.gif" alt="Timo Steiner GIF" class="hover-gif">
-            </div>
+    </div>
+
+    <div class="team-member">
+        <div class="image-container">
+            <img src="img/ueberuns/timo.png" alt="Portraitfoto Timo Steiner" class="static-image">
+            <img src="img/ueberuns/gifs/timo.gif" alt="Timo Steiner GIF" class="hover-gif">
+        </div>
+        <div class="text-container">
             <h3>Timo Steiner</h3>
             <p>Content Creator</p>
         </div>
-    
-        <div class="team-member">
-            <div class="image-container">
-                <img src="img/ueberuns/tonia.png" alt="Portraitfoto Tonia Moser" class="static-image">
-                <img src="img/ueberuns/gifs/tonia.gif" alt="Tonia Moser GIF" class="hover-gif">
-            </div>
+    </div>
+
+    <div class="team-member">
+        <div class="image-container">
+            <img src="img/ueberuns/tonia.png" alt="Portraitfoto Tonia Moser" class="static-image">
+            <img src="img/ueberuns/gifs/tonia.gif" alt="Tonia Moser GIF" class="hover-gif">
+        </div>
+        <div class="text-container">
             <h3>Tonia Moser</h3>
             <p>Art Director</p>
         </div>
     </div>
-        <section class="partnerfirmen">
-            <h2 class="centered">Unsere Partner</h2>
-            <section class="partner">
-                <img class="partnerlogo" src="img/partner/togoodtogo.svg">
-                <img class="partnerlogo" src="img/partner/planted.svg">
-                <img class="partnerlogo" src="img/partner/migros.svg">
-                <img class="partnerlogo" src="img/partner/alnatura.svg">
-                <img class="partnerlogo" src="img/partner/migros.svg">
-                <img class="partnerlogo" src="img/partner/togoodtogo.svg">
-                <img class="partnerlogo" src="img/partner/planted.svg">
-                <img class="partnerlogo" src="img/partner/migros.svg">
-            </section>
+</div>
+
+    <section class="partnerfirmen">
+        <h2 class="centered">Unsere Partner</h2>
+        <section class="partner">
+            <img class="partnerlogo"src="img/partner/planted.svg">
+            <img class="partnerlogo"src="img/partner/migros.svg">
+            <img class="partnerlogo"src="img/partner/alnatura.svg">
+            <img class="partnerlogo"src="img/partner/migros.svg">
+            <img class="partnerlogo"src="img/partner/togoodtogo.svg">
+            <img class="partnerlogo"src="img/partner/planted.svg">
+            <img class="partnerlogo"src="img/partner/migros.svg">
         </section>
+    </section>
 
-        <h2>Unsere Werte</h2>
-        <h3>benutzerfreundlich</h3> 
-        <p>Die User Experience steht im Mittelpunkt, um Kunden zufriedenzustellen und langfristige Bindungen aufzubauen.</p>
-        <h3>direkt</h3> 
-        <p>Wir kommunizieren offen und transparent, sowohl intern als auch gegenüber Kunden, Partnern und Stakeholdern.</p>
-        <h3>vernetzt</h3> 
-        <p>Wie fördern eine Kultur, in der Mitarbeiterinnen und Mitarbeiter aktiv zusammenarbeiten, um gemeinsame Ziele zu erreichen.</p>
+    <h2 class="h2-werte">Unsere Werte</h2>
+
+    <div class="werte-container">
+        <div class="wert-container">
+            <h3>benutzerfreundlich</h3>
+            <p>Die User Experience steht im Mittelpunkt, um Kunden zufriedenzustellen und langfristige Bindungen aufzubauen.</p>
+        </div>
+        
+        <div class="wert-container">
+            <h3>direkt</h3>
+            <p>Wir kommunizieren offen und transparent, sowohl intern als auch gegenüber Kunden, Partnern und Stakeholdern.</p>
+        </div>
+        
+        <div class="wert-container">
+            <h3>vernetzt</h3>
+            <p>Wie fördern eine Kultur, in der Mitarbeiterinnen und Mitarbeiter aktiv zusammenarbeiten, um gemeinsame Ziele zu erreichen.</p>
+        </div>
     </div>
-
     <footer id="footer-main">
         <section class="app-download">
             <h2>Starte dein gesundes Leben jetzt!</h2>

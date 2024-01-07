@@ -1,7 +1,9 @@
+
 body {
     background-color: #222;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    max-width: 100%;
 }
 
 img {
@@ -23,6 +25,12 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 88px;
+    width: 554px;
+    height: 264px;
+    top: 172px;
+    left: 150px;
+    transform: translateX(150px);
+
 }
 
 h2 {
@@ -32,6 +40,15 @@ h2 {
     font-weight: 700;
     line-height: 50px;
 }
+.h2-werte {
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    transform: translateX(150px);
+}
+
 
 h3 {
     font-family: Montserrat;
@@ -56,6 +73,13 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+}
+.p-titel {
+    Width: 554px;
+    Height: 112px;
+    Top: 462px;
+    Left: 150px;
+    transform: translateX(150px);
 }
 
 .p-small {
@@ -109,7 +133,27 @@ nav a {
     font-weight: bold;
     position: relative;
 }
-
+.button-grey {
+    display: flex;
+    background-color: #333333;
+     font-size: 20px;
+    font-weight: 700;
+    color: white;
+     cursor: pointer;
+     padding: 10px 20px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     border-radius: 96px;
+     border: none;
+     margin-top: 50px;
+     transform: translateX(150px);
+ }
+ 
+ .button-grey:hover {
+    background-color:#000;
+    color: white;
+ }
 .outline-button {
     display: flex;
     background-color: transparent;
@@ -165,6 +209,7 @@ nav a {
 
 .hover-gif {
     opacity: 0;
+    border-radius: 20px;
 }
 
 .image-container:hover .static-image {
@@ -175,19 +220,59 @@ nav a {
     opacity: 1;
 }
 
-/* Partner Section */
-.partnerfirmen {
-    margin-top: 40px;
-    padding-bottom: 80px;
-    padding-top: 80px;
+/* Stil für das Video-Container */
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Elemente oben ausrichten */
+    justify-content: space-between; /* Abstand zwischen den Elementen */
+    margin: 20px; /* Optionaler Außenabstand */
 }
 
-.partner {
+.text-container {
+    flex: 1; /* Flexibilität des Textcontainers */
+    margin-right: 20px; /* Optionaler rechter Abstand */
+    text-align: left;
+}
+
+.text-container h3 {
+    margin-bottom: 0%; /* Verringert den Abstand nach unten */
+}
+
+.text-container p {
+    margin-top: 0; /* Verringert den Abstand nach oben */
+}
+
+.video-container {
+    flex: 1; /* Flexibilität des Videocontainers */
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* partner */
+
+.partnerfirmen {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .partner {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 100px;
     position: relative;
+    @media (max-width:900px) {
+      flex-wrap: wrap;
+    }
 }
 
 .partner::before {
@@ -210,10 +295,30 @@ nav a {
     background: linear-gradient(to left, transparent, #222);
 }
 
-.partnerlogo {
+  .partnerlogo {
     max-width: 10%;
+  }
+
+
+  .werte-container {
+    display: flex;
+    margin: 0 150px; /* 150px Abstand von links und rechts */
+    gap: 20px; /* 20px Abstand zwischen den Containern */
+    margin-bottom: 138px;
 }
 
+.wert-container {
+    background: var(--cold-grey, #333);
+    border-radius: 20px;
+    padding: 20px;
+    flex-grow: 1; /* Erlaubt den Containern zu wachsen, um den verfügbaren Platz zu füllen */
+    flex-basis: 0; /* Setzt die Basisgröße der Container auf 0, sodass sie gleichmäßig wachsen */
+    display: flex; /* Aktiviert Flexbox innerhalb des Containers */
+    flex-direction: column; /* Stapelt die Inhalte vertikal */
+    justify-content: center; /* Zentriert Inhalte vertikal */
+    align-items: center; /* Zentriert Inhalte horizontal */
+    text-align: center; /* Zentriert den Text innerhalb von Blockelementen (wie <p>) */
+}
 /* Footer Section */
 #footer-main {
     background-color: #F4743B;
