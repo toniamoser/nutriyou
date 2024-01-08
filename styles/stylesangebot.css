@@ -20,6 +20,9 @@
 
  .funktion {
     max-width: 50%;
+    
+    @media (max-width: 650px) {
+      max-width: 100%;}
  }
 
  .vorteil {

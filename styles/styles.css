@@ -90,7 +90,7 @@ main {
     flex-direction: row;
     gap: 20px;
     flex-wrap: nowrap;
-    margin-top: 200px;
+    margin-top: 20px;
 
     @media (max-width: 650px) {
           display: block;}
@@ -100,7 +100,12 @@ main {
     width: 40%;
 
     @media (max-width: 650px) {
-      max-width: 100%;}
+      max-width: 100% vw;}
+  }
+
+  .img-we {
+    @media (max-width: 650px) {
+    max-width:80vw;}
   }
 
   .teaser-text {
@@ -121,14 +126,25 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
-    position: relative;
+    gap: 20px 100px;
     @media (max-width:900px) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+    }  
+}
+.partnerlogo {
+  max-width: 10%;
+  @media (max-width:900px) {
+    max-width: 12%;
+  }
+  @media (max-width:800px) {
+    max-width: 15%;
+  }
+  @media (max-width:400px) {
+    max-width: 3%;
+  }
 }
 
-.partner::before {
+/*.partner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -147,10 +163,7 @@ main {
     left: -160px;
     background: linear-gradient(to left, transparent, #222);
 }
-
-  .partnerlogo {
-    max-width: 10%;
-  }
+*/
 
 
 /*Bewertungen*/
@@ -162,11 +175,15 @@ main {
 .bewertung {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 20px;
     position: relative;
     margin-left: -50px;
     width: 100vw;
+    margin-top: 20px;
+
+    @media (max-width: 700px) {
+      display: block;
+    }
 
     /* carousell? */
     overflow: scroll;
@@ -182,6 +199,7 @@ main {
     align-items: center;
     gap: 20px;
     min-width: 33%;
+    margin: 20px;
 }
 
 
