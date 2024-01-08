@@ -40,10 +40,23 @@ main {
     align-items: center;
     flex-direction: row;
     gap: 20px;
+    padding: 0px 150px;
+    position: relative;
+        
+          @media (max-width: 1200px) {
+          padding: 0 100px;}
+      
+          @media (max-width: 1000px) {
+          padding: 0 50px;}
+      
+          @media (max-width: 650px) {
+          padding: 0 50px;}
+      
+          @media (max-width: 420px) {
+          padding: 0 20px;}
 
      @media (max-width: 1000px) {
           display: block;}
-    
   }
 
   .header-text {
@@ -53,12 +66,12 @@ main {
           max-width: 100%;}
   }
 
-  .header-pic img {
-    max-width: 100%; /* Adjust as needed */
-    height: auto;
+  .header img {
+    position: relative;
+    right: -300px;
   }
 
-  .download-home {
+  .download-home{
     display: flex;
     flex-direction: row;
     gap: 20px;

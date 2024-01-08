@@ -11,7 +11,22 @@
     justify-content: flex-start;
     align-items: left;
     gap: 20px;
-    flex-wrap: wrap;
+
+    @media (max-width: 1200px) {
+      padding: 40 100px;}
+  
+      @media (max-width: 1000px) {
+      padding: 40 50px;}
+  
+      @media (max-width: 650px) {
+      padding: 40 50px;}
+  
+      @media (max-width: 420px) {
+      padding: 40 20px;}
+
+      @media (max-width: 900px){
+      flex-wrap: wrap;
+      }
   }
 
   .textlink {
@@ -37,25 +52,34 @@
 
   .footerlogo {
     max-width: 75%;
+
+    @media (max-width: 900px){
+      max-width: 50% vw;
+      }
   }
 
   .footer-contact {
     flex: 3;
+    @media (max-width: 900px){
+      max-width: 50% vw;
+      }
   }
 
   .footernav {
     flex: 3;
+    @media (max-width: 900px){
+      max-width: 50% vw;
+      }
   }
 
   .footerlinks {
     flex: 2;
+    @media (max-width: 900px){
+      max-width: 50% vw;
+      }
   }
+  
 
-  @media (max-width: 1024px) {
-    .footer-container {
-      padding-left: 20px;
-    }
-  }
 
 
   /* App download footer*/
