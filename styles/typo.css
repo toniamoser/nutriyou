@@ -4,7 +4,18 @@ font-size: 70px;
 font-style: normal;
 font-weight: 700;
 line-height: 88px; /* 125.714% */
+
+    @media (max-width: 1200px) {
+    font-size: 50px;
+    line-height: 60px;
+    }
+
+    @media (max-width: 650px) {
+    font-size: 30px;
+    line-height: 40px;
+        }
 }
+
 
 h2 {
     font-family: Montserrat;
@@ -12,6 +23,16 @@ font-size: 45px;
 font-style: normal;
 font-weight: 700;
 line-height: 50px; /* 111.111% */
+
+    @media (max-width: 1200px) {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 650px) {
+    font-size: 28px;
+    line-height: 35px;
+    }
 }
 
 h3 {
@@ -21,6 +42,16 @@ font-style: normal;
 font-weight: 700;
 line-height: 35px; /* 140% */
 margin-bottom: 0px;
+
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    @media (max-width: 650px) {
+    font-size: 18px;
+    line-height: 22px;
+        }
 }
 
 h4 {
@@ -29,6 +60,17 @@ font-size: 20px;
 font-style: normal;
 font-weight: 700;
 line-height: 28px; /* 140% */
+
+    @media (max-width: 1200px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 650px) {
+       font-size: 14px;
+        line-height: 18px;
+    }
+
 }
 
 p {
@@ -37,7 +79,18 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; /* 155.556% */
+
+    @media (max-width: 1200px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
+
 .p-small {
     font-size: 15px;
     line-height: 23px;
@@ -47,6 +100,17 @@ line-height: 28px; /* 155.556% */
     font-size: 15px;
     line-height: 23px;
     text-align: center;
+
+        @media (max-width: 1200px) {
+            font-size: 13px;
+            line-height: 21px;
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 .p-small-bold {
@@ -59,3 +123,35 @@ line-height: 28px; /* 155.556% */
 .centered {
     text-align: center;
 }
+
+.button-grey {
+    display: flex;
+    background-color: #333333;
+     font-size: 20px;
+    font-weight: 700;
+    color: white;
+     cursor: pointer;
+     padding: 10px 20px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     border-radius: 96px;
+     border: none;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            padding: 10px 20px;
+             border-radius: 96px;
+         }
+
+         @media (max-width: 650px) {
+            font-size: 12px;
+            padding: 10px 20px;
+            border-radius: 96px;
+        }
+ }
+ 
+ .button-grey:hover {
+    background-color:#000;
+    color: white;
+ }
