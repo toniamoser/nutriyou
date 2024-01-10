@@ -1,82 +1,114 @@
-/*gesamte Seite*/
+/* Gesamte Seite */
 body {
     background-color: #222;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin: 0;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
-/*Bilder*/
+
+/* Bilder */
 img {
-        max-width: 100%;
-        height: auto;
+    max-width: 100%;
+    height: auto;
 }
-/*Aufzählungspunkte*/
+
+/* Aufzählungspunkte */
 ul {
     list-style: none;
 }
-/*Unterseitenspezifische Textstyles*/
-h1 {
-    font-family: Montserrat;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 88px;
-    width: 554px;
-    height: 264px;
-    top: 172px;
-    left: 150px;
-    transform: translateX(150px);
 
+/* Main-Styling */
+main {
+    padding: 0px 150px;
+    position: relative;
+  
+    @media (max-width: 1200px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 1000px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 650px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 0 20px;
+    }
 }
-.h2-werte {
-    font-family: Montserrat;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px;
-    transform: translateX(150px);
-}
-.p-titel {
-    Width: 554px;
-    Height: 112px;
-    Top: 462px;
-    Left: 150px;
-    transform: translateX(150px);
-}
+
+
+/*Unterseitenspezifische Textstyles*/
+
 
 /* Titel H1 und p Text dazu*/
+
+.h1 {
+    margin-left: 150px;
+}
 .content-container {
     display: flex;
+    flex-direction: row; /* Elemente nebeneinander anordnen */
     align-items: flex-start; /* Elemente oben ausrichten */
-
+    justify-content: space-between; /* Stellt den Abstand zwischen den Elementen sicher */
+    margin-top: 63px; /* Abstand zum Header */
 }
+
 .text-container {
     flex: 1; /* Flexibilität des Textcontainers */
     margin-right: 20px; /* Optionaler rechter Abstand */
     text-align: left;
 }
+
+
 .text-container h3 {
     margin-bottom: 0%; /* Verringert den Abstand nach unten */
+
 }
 .text-container p {
     margin-top: 0; /* Verringert den Abstand nach oben */
+    margin-left: 150px;
 }
 
-/*Video und Titelbild*/
+
+
+/* Video Container für größere Bildschirme */
 .video-container {
-    flex: 1; /* Flexibilität des Videocontainers */
     position: relative;
-    padding-bottom: 607px; /* Aspect Ratio 16:9 */
-    padding-right: 20px;
-    overflow: hidden;
+    width: 659px; /* Breite des Containers */
+    padding-top: 80.27%; /* Höhe als Prozentsatz der Breite */
+    margin-top: -270px; /* Entfernt den oberen Abstand */
+    margin-right: 26px; /* Abstand zum rechten Rand */
+    margin-left: 104px; /* Abstand zum linken Rand (Text und h1) */
+    margin-bottom: -300px; /* Abstand zu den Team Fotos */
 }
+
 .video-container video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 531px;
-    padding-right: 20px;
+    height: 100%;
+    object-fit: contain; /* Sorgt dafür, dass das gesamte Video sichtbar ist */
 }
+
+
+/* Anpassungen für kleinere Bildschirme */
+@media (max-width: 650px) {
+    .video-container {
+        width: 100%; /* Setzt die Breite auf 100% des Elternelements */
+        padding-top: 56.25%; /* Für ein 16:9-Verhältnis bei voller Breite */
+        margin: 20px 10px; /* Vereinfacht die Margin-Einstellungen */
+    }
+
+    .content-container {
+        flex-direction: column; /* Stapelt die Elemente vertikal */
+    }
+}
+
 
 /*Kontakt aufnehmen Button */
 .button-grey {
@@ -125,75 +157,115 @@ h1 {
     align-items: center;
     margin-top: 80px;
     margin-bottom: 40px;
-}
+    flex-wrap: wrap; /* Erlaubt den Elementen, in eine neue Zeile zu wechseln */
+    @media (max-width: 400px)
+        {ßmargin: 100px;
+            
+    }}
+
+
 .team-member {
-    width: 366px; /* Breite jedes Team-Mitglieds */
+    flex: 1; /* Erlaubt den Elementen, flexibel zu wachsen */
+    max-width: 366px; /* Maximale Breite jedes Team-Mitglieds */
     text-align: center;
+    margin: 10px; /* Fügt einen kleinen Abstand um jedes Element hinzu */
 }
+
 .image-container {
     position: relative;
-    height: 458px; /* Höhe der Bilder */
+    width: 100%; /* Setzt die Breite auf 100% des Elternelements */
+    padding-top: 125%; /* Verhältnis für die Höhe (z.B. 4:3 Verhältnis wäre 75%) */
 }
+
 .team-member img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     object-fit: cover;
     transition: opacity 0.3s ease;
 }
+
 .static-image {
     opacity: 1;
 }
+
 .hover-gif {
     opacity: 0;
     border-radius: 20px;
 }
+
 .image-container:hover .static-image {
     opacity: 0;
 }
+
 .image-container:hover .hover-gif {
     opacity: 1;
 }
 
-/* partner */
 
-.partnerfirmen {
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
-  .partner {
+/* Partnerlogos */
+
+.partner {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
-    position: relative;
-    @media (max-width:900px) {
-      flex-wrap: wrap;
+    gap: 20px 100px;
+    
+    @media (max-width: 900px) {
+        flex-wrap: wrap;
+    }  
+}
+
+.partnerlogo {
+    max-width: 10%;
+    
+    @media (max-width: 900px) {
+        max-width: 12%;
+    }
+    
+    @media (max-width: 800px) {
+        max-width: 15%;
+    }
+    
+    @media (max-width: 400px) {
+        max-width: 20%; /* Erhöht für kleinere Bildschirme */
     }
 }
-.partner::before {
+
+
+.breaker {
+    position: relative;
+    width: 100%; /* Setzt die Breite auf 100% des umgebenden Elements */
+    overflow: hidden; /* Verhindert horizontalen Überlauf */
+}
+
+.breaker::before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 15%;
-    right: -160px;
-    background: linear-gradient(to right, transparent, #222);
+    left: 0; /* Positioniert das Pseudo-Element am linken Rand */
+    width: 150px; /* Breite des Verlaufs */
+    max-width: 100%;
+    background: linear-gradient(to left, transparent, #222); /* Erstellt einen Verlauf von transparent nach #222 */
+    z-index: 1;
 }
-.partner::after {
+
+.breaker::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 15%;
-    left: -160px;
-    background: linear-gradient(to left, transparent, #222);
+    right: 0; /* Positioniert das Pseudo-Element am rechten Rand */
+    width: 150px; /* Breite des Verlaufs */
+    max-width: 100%;
+    background: linear-gradient(to right, transparent, #222); /* Erstellt einen Verlauf von transparent nach #222 */
+    z-index: 1;
 }
-  .partnerlogo {
-    max-width: 10%;
-  }
+
 
   /* Unsere Werte */
   .werte-container {
@@ -214,8 +286,11 @@ h1 {
     align-items: center; /* Zentriert Inhalte horizontal */
     text-align: center; /* Zentriert den Text innerhalb von Blockelementen (wie <p>) */
 }
+.h2-werte {
+    margin-left: 150px;
+}
 
-/*responsiv Befehele Seitenspezifisch*/
+/* Responsiv Befehle Seitenspezifisch */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -226,12 +301,23 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
+    
     .team-member, .wert-container {
-        width: 100%; /* Passen Sie die Breite der Elemente an, um den gesamten verfügbaren Platz zu nutzen */
+        width: 100%;
     }
 
     .text-container, .video-container {
         width: 100%;
-        padding-bottom: 0; /* Entfernen Sie das Padding für das Video */
+        padding-bottom: 0;
+    }
+    @media (max-width: 768px) {
+        /* Anpassungen für kleinere Bildschirme, falls notwendig */
+        .team-member {
+            max-width: 100%; /* Erlaubt den Bildern, die volle Breite einzunehmen */
+        }
+    
+        .image-container {
+            padding-top: 150%; /* Ändern Sie das Verhältnis für kleinere Bildschirme, falls notwendig */
+        }
     }
 }
