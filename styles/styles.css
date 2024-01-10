@@ -2,6 +2,7 @@ body {
     background-color: #222;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin: 0;
 }
 
 img {
@@ -40,42 +41,63 @@ main {
     align-items: center;
     flex-direction: row;
     gap: 20px;
-    padding: 0px 150px;
     position: relative;
-        
-          @media (max-width: 1200px) {
-          padding: 0 100px;}
-      
-          @media (max-width: 1000px) {
-          padding: 0 50px;}
-      
-          @media (max-width: 650px) {
-          padding: 0 50px;}
-      
-          @media (max-width: 420px) {
-          padding: 0 20px;}
+    overflow: hidden;
+    width: 100vw;
+    left: -150px;
 
-     @media (max-width: 1000px) {
-          display: block;}
+    @media (max-width: 1200px) {
+      left: -100px;
+    }
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+      left: -50px;
+    }
+
+    @media (max-width: 650px) {
+      left: -50px;
+    }
+
+    @media (max-width: 420px) {
+      left: -20px;
+    }
   }
+
 
   .header-text {
     max-width: 50%;
+    padding-left: 150px;
 
-      @media (max-width: 1000px) {
-          max-width: 100%;}
+    @media (max-width: 1200px) {
+      padding-left: 100px;
+    }
+
+    @media (max-width: 1000px) {
+      max-width: 100%;
+      padding-left: 50px;
+    }
+
+    @media (max-width: 650px) {
+      padding-left: 50px;
+    }
+
+    @media (max-width: 420px) {
+      padding-left: 20px;
+    }
   }
 
-  .header img {
-    position: relative;
-    right: -300px;
+  img.hero {
+    @media (min-width: 1200px) {
+      position: relative;
+      right: -120px;
+    }
   }
 
   .download-home{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    max-width: 35%;
 
     @media (max-width: 1000px) {
           max-width: 20%;
@@ -144,6 +166,52 @@ main {
   }
 }
 
+.breaker {
+  position: relative;
+  width: 100vw;
+  left: -150px;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    left: -100px;
+  }
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    left: -50px;
+  }
+
+  @media (max-width: 650px) {
+    left: -50px;
+  }
+
+  @media (max-width: 420px) {
+    left: -20px;
+  }
+}
+
+.breaker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  right: 0;
+  background: linear-gradient(to right, transparent, #222);
+  z-index: 1;
+}
+
+.breaker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  left: 0;
+  background: linear-gradient(to left, transparent, #222);
+  z-index: 1;
+}
+
 /*.partner::before {
     content: "";
     position: absolute;
@@ -177,7 +245,6 @@ main {
     flex-direction: row;
     gap: 20px;
     position: relative;
-    margin-left: -50px;
     width: 100vw;
     margin-top: 20px;
 

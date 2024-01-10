@@ -17,6 +17,11 @@
   
     @media (max-width: 1000px) {
       padding: 40px 50px;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
     }
   
     @media (max-width: 650px) {
@@ -25,6 +30,12 @@
   
     @media (max-width: 420px) {
       padding: 40px 20px;
+    }
+  }
+
+  .footer-container section {
+    @media (max-width: 900px) {
+      width: 300px;
     }
   }
   
@@ -91,7 +102,7 @@
   }
 
   .download {
-    max-width: 10%;
+    width: 10vw;
   }
 
   .store {
