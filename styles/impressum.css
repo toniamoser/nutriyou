@@ -1,0 +1,37 @@
+.box {
+margin: 0 400px;
+
+  }
+  
+  .header-overflow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 0; /* Anpassung: Links ausgerichtet */
+  }
+  
+  .header-pic-subpage {
+    overflow: hidden;
+    max-width: 100%; /* Anpassung: Volle Breite */
+    margin: 0 auto; /* Anpassung: Zentriert */
+  }
+  
+  .header img {
+    position: relative;
+    right: 0; /* Anpassung: Rechts ausgerichtet */
+  }
+  
+  .funktion {
+    max-width: 100%; /* Anpassung: Volle Breite */
+    margin: 0 auto; /* Anpassung: Zentriert */
+  }
+  
+  .vorteil {
+    padding: 12px 0;
+  }
+  
+  .vorteil h4 {
+    margin: 0;
+  }
+
+  
