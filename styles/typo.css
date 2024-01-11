@@ -80,7 +80,7 @@ p {
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 28px; /* 155.556% */
+line-height: 30px; /* 155.556% */
 margin-top: 5px;
 
     @media (max-width: 1200px) {
@@ -97,6 +97,15 @@ margin-top: 5px;
 .p-small {
     font-size: 15px;
     line-height: 23px;
+    @media (max-width: 1200px) {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .review {
@@ -121,6 +130,15 @@ margin-top: 5px;
     line-height: 23px;
     font-weight: 700;
     padding: 0;
+    @media (max-width: 1200px) {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .centered {
