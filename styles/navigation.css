@@ -42,9 +42,7 @@ nav li {
     font-weight: bold;
     position: relative;
 }
-a:hover{
-    color: rgba(255, 255, 255, 0.597);
-}
+
 
 .outline-button {
    background-color: transparent;
@@ -69,7 +67,9 @@ a:hover{
 .outline-button:hover  {
    background-color:#F4743B;
    color: white;
-   
+}
+.outline-button:hover > a{
+    color: #fff;
 }
 
 .outline-button-link {

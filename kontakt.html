@@ -34,38 +34,76 @@
         <section class="header">
             <section class="header-text">
                 <h1>Wir freuen <br> uns auf deine <br> Nachricht</h1>
-                <button class="button-grey"> Feedback abgeben</button>
+                <div style="display: inline-flex;align-items: center;margin-bottom: 20px;">
+                    <img class="icon" src="img/kontakt/telefon.png"><span class="iconText">079 833 39 00</span>
+                </div>
+                <br/>
+                <div style="display: inline-flex;align-items: center;">
+                    <img class="icon" src="img/kontakt/email.png"><span class="iconText">hallo@nutiyou.ch</span>
+                </div>
+                <br/><br/>
+                <button class="button-grey">Feedback abgeben</button>
             </section>
-            <section>
+            <section style="text-align: right; margin-left: auto;">
                 <img class="hero" src="img/kontakt/avocadobowl.png" alt="Ricebowl with avocado.">
-            </section>
+      </section>
         </section>
     
-        <section class="box">
+        <section class="box" style="margin-bottom: 140px;">
             <div class="funktion">
                 <h2>Sag Hallo!</h2>
-                <p>nutriyou
-                    Brokkolistrasse 22
-                    7899 Tomatenhausen
-                    079 833 39 00
-                    hallo@nutriyou.ch
-                    www.nutiyou.ch</p>
+                <br/>
+                <form action="">
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="">Vorname*</label>
+                            <input type="text" class="form-control" placeholder="Max">
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="">Nachname*</label>
+                            <input type="text" class="form-control" placeholder="Mustermann">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="">Email*</label>
+                            <input type="text" class="form-control" placeholder="max.mustermann@bluewin.ch">
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="">Telefonnummer</label>
+                            <input type="text" class="form-control" placeholder="079 677 89 89">
+                        </div>
+                    </div>
+                    <div class="form-group" style="width: 100%;">
+                        <div class="form-wrapper" style="width: 100%;margin: 0;">
+                            <label for="">Wie können wir dir helfen?*</label>
+                            <textarea class="form-control" placeholder="Nachricht" style="max-width: 766px;height: 124px;padding: 20px;"></textarea>
+                        </div>
+                    </div>
+                    <br/>
+                    <button class="outline-button" style="display:block" ><a class="outline-button-link" href="https://www.apple.com/chde/app-store/" target="_blank">Senden</a></button>
+                </form>
             </div>
         </section>
     
-        <section class="box">
+        <section class="box" style="margin-bottom: 40px;">
             <div class="funktion">
                 <h2>Anreise</h2>
                 <p>nutriyou <br>
                     Brokkolistrasse 22 <br>
                     7899 Tomatenhausen </p>
             </div>
-        </section>
-        <section>
-            <img class="hero" src="img/kontakt/location.png" alt="location.">
+            <br/>
+            <div class="aligned-buttons" style="display: flex;">
+                <button class="button-grey" style="margin-right: 20px;">Mit dem Auto</button>
+                <button class="button-grey">Mit dem Zug</button>
+            </div>
         </section>
         
 </main>
+<section style="text-align: center";>
+    <img style="width:100%;max-width: 100%;" class="hero" src="img/kontakt/location.png" alt="location.">
+</section>
         </body>
 <footer id="footer-main">
     <section class="app-download">

@@ -1,6 +1,13 @@
 .box {
-margin: 0 400px;
-
+margin: 0 auto;
+max-width: 700px;
+  }
+  section.header {
+    width:calc(100vw - 17px);
+    overflow: visible;
+  }
+  body img.hero {
+    right:-92px;
   }
   
   .header-overflow {
@@ -34,4 +41,6 @@ margin: 0 400px;
     margin: 0;
   }
 
-  
+  button {
+    font-family: Montserrat;
+  }
