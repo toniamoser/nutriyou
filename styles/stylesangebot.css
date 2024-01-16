@@ -1,7 +1,9 @@
  .funktion {
     max-width: 50%;    
-    @media (max-width: 650px) {
-      max-width: 100%;}
+ }
+ @media (max-width: 650px) {
+  .funktion {
+  max-width: 100%;}
  }
  
  .teaser-angebot {
@@ -10,10 +12,11 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 20px;
-  flex-wrap: nowrap;
-    @media (max-width: 650px) {
-          display: block;}
- }
+  flex-wrap: nowrap;}
+  @media (max-width: 650px) {
+    .teaser-angebot {
+    display: block;}
+}
 
 
  .vorteil {
