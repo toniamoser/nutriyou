@@ -21,24 +21,24 @@ ul {
 /* Main-Styling */
 main {
     padding: 0px 150px;
-    position: relative;
+    position: relative;}
   
     @media (max-width: 1200px) {
-        padding: 0 50px;
+        .main {padding: 0 50px;}
     }
 
     @media (max-width: 1000px) {
-        padding: 0 10px;
+        .main {padding: 0 10px;}
     }
 
     @media (max-width: 650px) {
-        padding: 0 10px;
+        .main {padding: 0 10px;}
     }
 
     @media (max-width: 420px) {
-        padding: 0 10px;
+        .main {padding: 0 10px;}
     }
-}
+
 
 
 /*Unterseitenspezifische Textstyles*/
@@ -46,9 +46,30 @@ main {
 
 /* Titel H1 und p Text dazu*/
 
-.h1 {
+.h1, text-container p {
     margin-left: 150px;
 }
+    @media (max-width: 1200px) {
+        .h1, .text-container p {margin-left: 100px;}
+    }
+
+    @media (max-width: 1000px) {
+        .h1, .text-container p {margin-left: 80px;}
+    }
+
+    @media (max-width: 650px) {
+        .h1, .text-container p {margin-left: 50px;}
+    }
+
+    @media (max-width: 420px) {
+        .h1, .text-container p {margin-left: 30px;}
+    }
+    @media (max-width: 320px) {
+        .h1, .text-container p {margin-left: 20px;}
+    }
+
+
+
 .content-container {
     display: flex;
     flex-direction: row; /* Elemente nebeneinander anordnen */
@@ -57,41 +78,70 @@ main {
     margin-top: 63px; /* Abstand zum Header */
 }
 
+
 .text-container {
     flex: 1; /* Flexibilität des Textcontainers */
     margin-right: 20px; /* Optionaler rechter Abstand */
     text-align: left;
+    max-width: 100%; /* Erlaubt dem Text, die volle Breite des Textcontainers einzunehmen */
 }
-
 
 .text-container h3 {
     margin-bottom: 0%; /* Verringert den Abstand nach unten */
 
-    @media (max-width: 650px) {
-        margin-left: 30px;
+    @media (max-width: 1200px) {
+        .text-container h3 {padding: 0 50px;}
     }
 
+    @media (max-width: 1000px) {
+        .text-container h3 {padding: 0 10px;}
+    }
+
+    @media (max-width: 650px) {
+        .text-container h3 {padding: 0 10px;}
+    }
+
+    @media (max-width: 420px) {
+        .text-container h3 {padding: 0 10px;}
+    }
 }
+
 .text-container p {
     margin-top: 0; /* Verringert den Abstand nach oben */
-    margin-left: 150px;
+    margin-left: 150px;}
+
+    @media (max-width: 1200px) {
+        .text-container p {margin-left: 100px;}
+
+    }
+
+    @media (max-width: 1000px) {
+        .text-container p {margin-left: 80px;}
+
+    }
 
     @media (max-width: 650px) {
-        margin-left: 30px;
+        .text-container p {margin-left: 50px;}
     }
-}
 
+    @media (max-width: 420px) {
+        .text-container p {margin-left: 30px;}
+
+    }
+    @media (max-width: 320px) {
+        .text-container p {margin-left: 20px}
+    }
 
 
 /* Video Container für größere Bildschirme */
 .video-container {
     position: relative;
     width: 659px; /* Breite des Containers */
-    padding-top: 80.27%; /* Höhe als Prozentsatz der Breite */
-    margin-top: -270px; /* Entfernt den oberen Abstand */
+    padding-top: 45%; /* Höhe als Prozentsatz der Breite */
+ 
     margin-right: 26px; /* Abstand zum rechten Rand */
     margin-left: 104px; /* Abstand zum linken Rand (Text und h1) */
-    margin-bottom: -300px; /* Abstand zu den Team Fotos */
+    margin-bottom: -200px; /* Abstand zu den Team Fotos */
 }
 
 .video-container video {
@@ -105,7 +155,7 @@ main {
 
 
 /* Anpassungen für kleinere Bildschirme */
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     .video-container {
         width: 100%; /* Setzt die Breite auf 100% des Elternelements */
         padding-top: 56.25%; /* Für ein 16:9-Verhältnis bei voller Breite */
@@ -126,15 +176,18 @@ main {
     font-weight: 700;
     color: white;
      cursor: pointer;
-     padding: 10px 20px;
      justify-content: center;
      align-items: center;
      gap: 10px;
      border-radius: 96px;
      border: none;
      margin-top: 50px;
-     transform: translateX(150px);
- }
+     margin-left: 150px;
+
+ 
+}
+    
+ 
  .button-grey:hover {
     background-color:#000;
     color: white;
@@ -152,13 +205,34 @@ main {
     gap: 10px;
     border-radius: 96px;
     border: 3px solid var(--vibrant-orange, #F4743B);
-}
+
+    }
+
 .outline-button:hover {
     background-color: #F4743B;
     color: white;
 }
+    @media (max-width: 1200px) {
+        .button-grey { margin-left: 100px;}
 
-/* Team Container mit GIF Hover Effect */
+        @media (max-width: 1000px) {
+            .button-grey {margin-left: 80px;}
+        
+    
+        @media (max-width: 650px) {
+            .button-grey {margin-left: 50px;}
+        
+    
+        @media (max-width: 420px) {
+            .button-grey {margin-left: 30px;}
+        
+        @media (max-width: 320px) {
+            .button-grey {margin-left: 20px;}}
+        }}}}
+
+
+
+        /* Team Container mit GIF Hover Effect */
 .team-container {
     display: flex;
     justify-content: space-evenly; /* Stellt die gleichmäßige Verteilung sicher */
@@ -166,10 +240,30 @@ main {
     margin-top: 80px;
     margin-bottom: 40px;
     flex-wrap: wrap; /* Erlaubt den Elementen, in eine neue Zeile zu wechseln */
-    @media (max-width: 400px)
-        {ßmargin: 100px;
-            
-    }}
+    width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    .team-container {
+        margin: 100px 10%; /* Setzt den oberen und unteren Rand auf 100px */
+         flex-direction: column; /* Stapelt die Elemente vertikal */
+
+    }
+}
+@media (max-width: 1000px) {
+    .team-member {
+        width: calc(100% - 100px); /* Berechnet die Breite abzüglich des Rands */
+        margin: 50px; /* Setzt den Rand auf 50px rundherum */
+        margin-right: 50px;
+    }
+    .image-container {
+        width: 100%;
+        padding-top: 125%; /* Passt das Höhen-Breiten-Verhältnis an, um den Rand zu berücksichtigen */
+    }
+}
+
+
 
 
 .team-member {
@@ -185,48 +279,54 @@ main {
     text-align: left;
 }
 
-
 .text-team-container h3 {
     margin-bottom: 0%; /* Verringert den Abstand nach unten */
-
 }
-.text-team-container {
-    margin-top: 0; /* Verringert den Abstand nach oben */
-    margin-left: 150px;
+
+.text-team-container p {
+    max-width: 100%; /* Erlaubt dem Text, die volle Breite des Textcontainers einzunehmen */
 }
 
 .image-container {
     position: relative;
-    width: 100%; /* Setzt die Breite auf 100% des Elternelements */
-    padding-top: 125%; /* Verhältnis für die Höhe (z.B. 4:3 Verhältnis wäre 75%) */
+    width: 80%; /* Setzt die Breite auf 100% des Elternelements */
+    padding-top: 100%; /* Verhältnis für die Höhe (z.B. 4:3 Verhältnis wäre 75%) */
+    height: auto; /* Ermöglicht das automatische Anpassen der Höhe */
+    
+    img {
+        object-fit: contain;
+    }
 }
 
+
+
+
 .team-member img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+transition: opacity 0.3s ease;
 }
 
 .static-image {
-    opacity: 1;
+opacity: 1;
 }
 
 .hover-gif {
-    opacity: 0;
-    border-radius: 20px;
+opacity: 0;
+border-radius: 20px;
 }
 
 .image-container:hover .static-image {
-    opacity: 0;
+opacity: 0;
 }
 
 .image-container:hover .hover-gif {
-    opacity: 1;
+opacity: 1;
 }
 
 
@@ -341,7 +441,7 @@ main {
         }
     
         .image-container {
-            padding-top: 150%; /* Ändern Sie das Verhältnis für kleinere Bildschirme, falls notwendig */
+            padding-top: 100%; /* Ändern Sie das Verhältnis für kleinere Bildschirme, falls notwendig */
         }
     }
 }
