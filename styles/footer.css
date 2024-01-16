@@ -11,27 +11,31 @@
     align-items: left;
     gap: 20px;
     padding: 40px 150px;
-  
-    @media (max-width: 1200px) {
-      padding: 40px 100px;
-    }
-  
-    @media (max-width: 1000px) {
-      padding: 40px 50px;
-    }
+  }
+  @media (max-width: 1200px) {
+    .footer-container {
+    padding: 40px 100px;}
+  }
 
-    @media (max-width: 900px) {
-      flex-wrap: wrap;
-      display: block;
-    }
-  
-    @media (max-width: 650px) {
-      padding: 10px 50px;
-    }
-  
-    @media (max-width: 420px) {
-      padding: 10px 20px;
-    }
+  @media (max-width: 1000px) {
+    .footer-container {
+    padding: 40px 50px;}
+  }
+
+  @media (max-width: 900px) {
+    .footer-container {
+    flex-wrap: wrap;
+    display: block;}
+  }
+
+  @media (max-width: 650px) {
+    .footer-container {
+    padding: 20px 50px;}
+  }
+
+  @media (max-width: 420px) {
+    .footer-container {
+    padding: 20px 20px;}
   }
   
 
@@ -59,43 +63,48 @@
 
   .footerlogo {
     max-width: 300px;
-
-    @media (max-width: 900px){
-      max-width: 50% vw;
-      }
   }
+  @media (max-width: 900px){
+    .footerlogo {
+    max-width: 50% vw;}
+    }
 
   .footer-contact {
     flex: 3;
-    @media (max-width: 900px){
-      max-width: 50% vw;
-      margin: 20px 0;
-      }
   }
+  @media (max-width: 900px){
+    .footer-contact {
+    max-width: 50% vw;
+    margin: 20px 0;}
+    }
 
   .footernav {
     flex: 3;
-    @media (max-width: 900px){
-      max-width: 50% vw;
-      margin: 20px 0;
-      }
   }
+  @media (max-width: 900px){
+    .footernav {
+    max-width: 50% vw;
+    margin: 20px 0;}
+    }
 
   .footerlinks {
     flex: 2;
-    @media (max-width: 900px){
-      max-width: 50% vw;
-      margin: 20px 0;
-      }
-      @media (max-width: 1200px) {
-        font-size: 13px;
-        line-height: 21px;
+  }
+  @media (max-width: 900px){
+    .footerlinks {
+    max-width: 50% vw;
+    margin: 20px 0;}
     }
+    @media (max-width: 1200px) {
+      .footerlinks {
+      font-size: 13px;
+      line-height: 21px;}
+  }
 
-    @media (max-width: 650px) {
-        font-size: 12px;
-        line-height: 18px;
-    }
+  @media (max-width: 650px) {
+    .footerlinks {
+      font-size: 12px;
+      line-height: 18px;}
   }
   
 
@@ -110,15 +119,18 @@
   }
   .store img {
     width: 15%;
-    @media (max-width: 1000px) {
-      width: 15vw;
-    }
+  }
+  @media (max-width: 1000px) {
+    .store img {
+    width: 15vw;}
+  }
 
-    @media (max-width: 650px) {
-      width: 20vw;
-    }
+  @media (max-width: 650px) {
+    .store img {
+    width: 20vw;}
+  }
 
-    @media (max-width: 420px) {
-      width: 30vw;;
-    }
+  @media (max-width: 420px) {
+    .store img {
+    width: 30vw;}
   }
