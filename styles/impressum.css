@@ -38,4 +38,8 @@ max-width: 700px;
     .impressum{
     padding: 50px 0px;}
   }
+
+  .impressum h2 {
+    padding-top: 40px;
+  }
   
