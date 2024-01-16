@@ -11,6 +11,52 @@
       /* body img.hero {
         right:0px;
       } */
+
+      .tel p::before {
+        content: url('../img/kontakt/tel.svg');
+        padding-right: .75rem;
+        width: 2vw;
+        height: 2vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+@media (max-width: 650px) {
+    .tel p::before {
+        width: 4vw;
+        height: 4vw;
+    }   
+}
+@media (max-width: 400px) {
+    .tel p::before {
+        width: 5vw;
+        height: 5vw;
+    }   
+}
+
+      .mail p::before {
+        content: url('../img/kontakt/mail.svg');
+        padding-right: .75rem;
+        width: 2vw;
+        height: 2vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      @media (max-width: 650px) {
+        .mail p::before {
+            width: 4vw;
+            height: 4vw;
+        }   
+    }
+    @media (max-width: 400px) {
+        .mail p::before {
+            width: 5vw;
+            height: 5vw;
+        }   
+    }
+
+      .tel {
+        margin-bottom: 20px;
+      }
       
       .icon {
         margin-right: 20px;
@@ -64,9 +110,9 @@
         border:0px;
     }
     
-    p,h1,h2,h3,h4,h5,h6,ul {
+    /* p,h1,h2,h3,h4,h5,h6,ul {
         margin: 0;
-    }
+    } */
     
     img {
         max-width: 100%;
