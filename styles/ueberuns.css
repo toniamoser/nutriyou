@@ -24,19 +24,19 @@ main {
     position: relative;}
   
     @media (max-width: 1200px) {
-        .main {padding: 0 50px;}
+        .main {padding: 0 100px;}
     }
 
     @media (max-width: 1000px) {
-        .main {padding: 0 10px;}
+        .main {padding: 0 50px;}
     }
 
     @media (max-width: 650px) {
-        .main {padding: 0 10px;}
+        .main {padding: 0 50px;}
     }
 
     @media (max-width: 420px) {
-        .main {padding: 0 10px;}
+        .main {padding: 0 20px;}
     }
 
 
@@ -46,29 +46,33 @@ main {
 
 /* Titel H1 und p Text dazu*/
 
-.h1, text-container p {
+.h1, .text-container p, .button-grey {
     margin-left: 150px;
 }
     @media (max-width: 1200px) {
-        .h1, .text-container p {margin-left: 100px;}
+        .h1, .text-container p, .button-grey{margin-left: 100px;}
     }
 
     @media (max-width: 1000px) {
-        .h1, .text-container p {margin-left: 80px;}
+        .h1, .text-container p, .button-grey {margin-left: 80px;}
     }
 
     @media (max-width: 650px) {
-        .h1, .text-container p {margin-left: 50px;}
+        .h1, .text-container p,.button-grey {
+            margin-left: 50px;
+            margin-right: 5%}
     }
 
     @media (max-width: 420px) {
-        .h1, .text-container p {margin-left: 30px;}
+        .h1, .text-container p, .button-grey {
+            margin-left: 30px;
+            margin-right: 5%;}
     }
     @media (max-width: 320px) {
-        .h1, .text-container p {margin-left: 20px;}
+        .h1, .text-container p, .button-grey {
+            margin-left: 20px;
+            margin-right: 5%;}
     }
-
-
 
 .content-container {
     display: flex;
@@ -77,7 +81,6 @@ main {
     justify-content: space-between; /* Stellt den Abstand zwischen den Elementen sicher */
     margin-top: 63px; /* Abstand zum Header */
 }
-
 
 .text-container {
     flex: 1; /* Flexibilität des Textcontainers */
@@ -106,31 +109,7 @@ main {
     }
 }
 
-.text-container p {
-    margin-top: 0; /* Verringert den Abstand nach oben */
-    margin-left: 150px;}
 
-    @media (max-width: 1200px) {
-        .text-container p {margin-left: 100px;}
-
-    }
-
-    @media (max-width: 1000px) {
-        .text-container p {margin-left: 80px;}
-
-    }
-
-    @media (max-width: 650px) {
-        .text-container p {margin-left: 50px;}
-    }
-
-    @media (max-width: 420px) {
-        .text-container p {margin-left: 30px;}
-
-    }
-    @media (max-width: 320px) {
-        .text-container p {margin-left: 20px}
-    }
 
 
 /* Video Container für größere Bildschirme */
@@ -168,70 +147,6 @@ main {
 }
 
 
-/*Kontakt aufnehmen Button */
-.button-grey {
-    display: flex;
-    background-color: #333333;
-     font-size: 20px;
-    font-weight: 700;
-    color: white;
-     cursor: pointer;
-     justify-content: center;
-     align-items: center;
-     gap: 10px;
-     border-radius: 96px;
-     border: none;
-     margin-top: 50px;
-     margin-left: 150px;
-
- 
-}
-    
- 
- .button-grey:hover {
-    background-color:#000;
-    color: white;
- }
-.outline-button {
-    display: flex;
-    background-color: transparent;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--vibrant-orange, #F4743B);
-    cursor: pointer;
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 96px;
-    border: 3px solid var(--vibrant-orange, #F4743B);
-
-    }
-
-.outline-button:hover {
-    background-color: #F4743B;
-    color: white;
-}
-    @media (max-width: 1200px) {
-        .button-grey { margin-left: 100px;}
-
-        @media (max-width: 1000px) {
-            .button-grey {margin-left: 80px;}
-        
-    
-        @media (max-width: 650px) {
-            .button-grey {margin-left: 50px;}
-        
-    
-        @media (max-width: 420px) {
-            .button-grey {margin-left: 30px;}
-        
-        @media (max-width: 320px) {
-            .button-grey {margin-left: 20px;}}
-        }}}}
-
-
-
         /* Team Container mit GIF Hover Effect */
 .team-container {
     display: flex;
@@ -262,9 +177,6 @@ main {
         padding-top: 125%; /* Passt das Höhen-Breiten-Verhältnis an, um den Rand zu berücksichtigen */
     }
 }
-
-
-
 
 .team-member {
     flex: 1; /* Erlaubt den Elementen, flexibel zu wachsen */
@@ -416,10 +328,7 @@ opacity: 1;
 
 /* Responsiv Befehle Seitenspezifisch */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+
 
     .content-container, .team-container, .werte-container {
         flex-direction: column;
