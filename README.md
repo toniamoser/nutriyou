@@ -10,6 +10,7 @@ Responsive anpassung des Designs
 Bilder die randabfallen platziert werden sollen
 Partner und Review section
 Css war nicht valid, weil media queries direkt in tags waren
+Bei Problem Codes von Teammitgliedern verstehen
 ### Welche Ressourcen wurden genutzt? 
 Chat GPT und Tutorials W3 Schools for footer and headernav
 Hilfe von Programmierern, wenn irgendwo gar nicht weiter
