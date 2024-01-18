@@ -1,4 +1,4 @@
-# NutriYou
+# nutriyou
 Projekt für Interaktive Medien 1 | FHGR
 
 ### Was ist das Ziel des Projekts?
