@@ -13,6 +13,7 @@
   flex-direction: row;
   gap: 20px;
   flex-wrap: nowrap;}
+  
   @media (max-width: 650px) {
     .teaser-angebot {
     display: block;}
