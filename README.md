@@ -15,6 +15,8 @@ Wir möchten mit unserer Website potenziellen Kunden ermöglichen, dass sie schn
 - Das Video und das zugehörige Poster platzieren, da unterschiedliches Format
 - Horizontales Scrollen verhindern
 - Verhindern, dass verschiedene Elemente ineinander geraten und sich gegenseitig verdecken
+- Zu grosse Bilder/Ordner, die schlussendlich durch Github nicht gepusht werden konnten
+- Formular war nicht valide, erst beim Überarbeiten
 
 ### Welche Ressourcen wurden genutzt? 
 - Chat GPT und Tutorials von W3 Schools für Footer und Header-Navigation
