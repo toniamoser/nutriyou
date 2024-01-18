@@ -1,323 +1,135 @@
-/* Gesamte Seite */
-body {
-    background-color: #222;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    margin: 0;
-    overflow-x: hidden; /* Verhindert horizontales Scrollen */
-}
 
-/* Bilder */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Aufzählungspunkte */
-ul {
-    list-style: none;
-}
-
-/* Main-Styling */
-main {
-    padding: 0px 150px;
-    position: relative;
+@media (max-width: 1000px) {
+    video.hero {
+        max-width: 100vw;}
+  }
   
-    @media (max-width: 1200px) {
-        padding: 0 100px;
-    }
+      @media (max-width: 640px) {
+        video.hero {
+        max-width: 100vw;}
+      }
+      
+      @media (min-width: 1000px) {
+        video.hero {
+        position: relative;
+        right: -50px;}
+      }
 
-    @media (max-width: 1000px) {
-        padding: 0 50px;
-    }
+video {
+        max-width: 100%;
+      }
 
-    @media (max-width: 650px) {
-        padding: 0 50px;
-    }
-
-    @media (max-width: 420px) {
-        padding: 0 20px;
-    }
-}
-
-
-/*Unterseitenspezifische Textstyles*/
-
-
-/* Titel H1 und p Text dazu*/
-
-.h1 {
-    margin-left: 150px;
-}
-.content-container {
-    display: flex;
-    flex-direction: row; /* Elemente nebeneinander anordnen */
-    align-items: flex-start; /* Elemente oben ausrichten */
-    justify-content: space-between; /* Stellt den Abstand zwischen den Elementen sicher */
-    margin-top: 63px; /* Abstand zum Header */
-}
-
-.text-container {
-    flex: 1; /* Flexibilität des Textcontainers */
-    margin-right: 20px; /* Optionaler rechter Abstand */
-    text-align: left;
-}
-
-
-.text-container h3 {
-    margin-bottom: 0%; /* Verringert den Abstand nach unten */
-
-}
-.text-container p {
-    margin-top: 0; /* Verringert den Abstand nach oben */
-    margin-left: 150px;
-}
-
-
-
-/* Video Container für größere Bildschirme */
-.video-container {
-    position: relative;
-    width: 659px; /* Breite des Containers */
-    padding-top: 80.27%; /* Höhe als Prozentsatz der Breite */
-    margin-top: -270px; /* Entfernt den oberen Abstand */
-    margin-right: 26px; /* Abstand zum rechten Rand */
-    margin-left: 104px; /* Abstand zum linken Rand (Text und h1) */
-    margin-bottom: -300px; /* Abstand zu den Team Fotos */
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Sorgt dafür, dass das gesamte Video sichtbar ist */
-}
-
-
-/* Anpassungen für kleinere Bildschirme */
-@media (max-width: 650px) {
-    .video-container {
-        width: 100%; /* Setzt die Breite auf 100% des Elternelements */
-        padding-top: 56.25%; /* Für ein 16:9-Verhältnis bei voller Breite */
-        margin: 20px 10px; /* Vereinfacht die Margin-Einstellungen */
-    }
-
-    .content-container {
-        flex-direction: column; /* Stapelt die Elemente vertikal */
-    }
-}
-
-
-/*Kontakt aufnehmen Button */
-.button-grey {
-    display: flex;
-    background-color: #333333;
-     font-size: 20px;
-    font-weight: 700;
-    color: white;
-     cursor: pointer;
-     padding: 10px 20px;
-     justify-content: center;
-     align-items: center;
-     gap: 10px;
-     border-radius: 96px;
-     border: none;
-     margin-top: 50px;
-     transform: translateX(150px);
- }
- .button-grey:hover {
-    background-color:#000;
-    color: white;
- }
-.outline-button {
-    display: flex;
-    background-color: transparent;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--vibrant-orange, #F4743B);
-    cursor: pointer;
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 96px;
-    border: 3px solid var(--vibrant-orange, #F4743B);
-}
-.outline-button:hover {
-    background-color: #F4743B;
-    color: white;
-}
 
 /* Team Container mit GIF Hover Effect */
-.team-container {
-    display: flex;
-    justify-content: space-evenly; /* Stellt die gleichmäßige Verteilung sicher */
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    flex-wrap: wrap; /* Erlaubt den Elementen, in eine neue Zeile zu wechseln */
-    @media (max-width: 400px)
-        {ßmargin: 100px;
-            
-    }}
-
-
-.team-member {
-    flex: 1; /* Erlaubt den Elementen, flexibel zu wachsen */
-    max-width: 366px; /* Maximale Breite jedes Team-Mitglieds */
-    text-align: center;
-    margin: 10px; /* Fügt einen kleinen Abstand um jedes Element hinzu */
-}
-
-.image-container {
-    position: relative;
-    width: 100%; /* Setzt die Breite auf 100% des Elternelements */
-    padding-top: 125%; /* Verhältnis für die Höhe (z.B. 4:3 Verhältnis wäre 75%) */
-}
-
-.team-member img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-}
-
-.static-image {
-    opacity: 1;
-}
-
-.hover-gif {
-    opacity: 0;
-    border-radius: 20px;
-}
-
-.image-container:hover .static-image {
-    opacity: 0;
-}
-
-.image-container:hover .hover-gif {
-    opacity: 1;
-}
-
-
-/* Partnerlogos */
-
-.partner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px 100px;
-    
-    @media (max-width: 900px) {
-        flex-wrap: wrap;
-    }  
-}
-
-.partnerlogo {
-    max-width: 10%;
-    
-    @media (max-width: 900px) {
-        max-width: 12%;
-    }
-    
-    @media (max-width: 800px) {
-        max-width: 15%;
-    }
-    
-    @media (max-width: 400px) {
-        max-width: 20%; /* Erhöht für kleinere Bildschirme */
-    }
-}
-
-
-.breaker {
-    position: relative;
-    width: 100%; /* Setzt die Breite auf 100% des umgebenden Elements */
-    overflow: hidden; /* Verhindert horizontalen Überlauf */
-}
-
-.breaker::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0; /* Positioniert das Pseudo-Element am linken Rand */
-    width: 150px; /* Breite des Verlaufs */
-    max-width: 100%;
-    background: linear-gradient(to left, transparent, #222); /* Erstellt einen Verlauf von transparent nach #222 */
-    z-index: 1;
-}
-
-.breaker::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0; /* Positioniert das Pseudo-Element am rechten Rand */
-    width: 150px; /* Breite des Verlaufs */
-    max-width: 100%;
-    background: linear-gradient(to right, transparent, #222); /* Erstellt einen Verlauf von transparent nach #222 */
-    z-index: 1;
-}
-
-
-  /* Unsere Werte */
-  .werte-container {
-    display: flex;
-    margin: 0 150px; /* 150px Abstand von links und rechts */
-    gap: 20px; /* 20px Abstand zwischen den Containern */
-    margin-bottom: 138px;
-}
-.wert-container {
-    background: var(--cold-grey, #333);
-    border-radius: 20px;
-    padding: 20px;
-    flex-grow: 1; /* Erlaubt den Containern zu wachsen, um den verfügbaren Platz zu füllen */
-    flex-basis: 0; /* Setzt die Basisgröße der Container auf 0, sodass sie gleichmäßig wachsen */
-    display: flex; /* Aktiviert Flexbox innerhalb des Containers */
-    flex-direction: column; /* Stapelt die Inhalte vertikal */
-    justify-content: center; /* Zentriert Inhalte vertikal */
-    align-items: center; /* Zentriert Inhalte horizontal */
-    text-align: center; /* Zentriert den Text innerhalb von Blockelementen (wie <p>) */
-}
-.h2-werte {
-    margin-left: 150px;
-}
-
-/* Responsiv Befehle Seitenspezifisch */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-container, .team-container, .werte-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .team-member, .wert-container {
-        width: 100%;
-    }
-
-    .text-container, .video-container {
-        width: 100%;
-        padding-bottom: 0;
-    }
-    @media (max-width: 768px) {
-        /* Anpassungen für kleinere Bildschirme, falls notwendig */
-        .team-member {
-            max-width: 100%; /* Erlaubt den Bildern, die volle Breite einzunehmen */
+        .team-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; /* Stellt die gleichmäßige Verteilung sicher */
+            flex-wrap: wrap; /* Erlaubt den Elementen, in eine neue Zeile zu wechseln */
+            margin-top: 80px;
         }
-    
+        
+        @media (max-width: 650px) {
+            .team-container {
+            display: block;
+        }
+        }
+        
+        
+        
+        .team {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        .team:last-child{
+            padding-right: 0px;
+        }
+        
+        @media (max-width: 650px) {
+            .team {
+            padding-top: 50px;
+        }
+        }
+        
         .image-container {
-            padding-top: 150%; /* Ändern Sie das Verhältnis für kleinere Bildschirme, falls notwendig */
+            position: relative;
+            padding-top: 100%; /* Verhältnis für die Höhe (z.B. 4:3 Verhältnis wäre 75%) */
+            min-height: 40px;        
         }
-    }
+        
+        .image-container img {
+            object-fit: contain;
+        }
+        
+        .team img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+        }
+        
+        .static-image {
+        opacity: 1;
+        }
+        
+        .hover-gif {
+        opacity: 0;
+        border-radius: 20px;
+        }
+        
+        .image-container:hover .static-image {
+        opacity: 0;
+        }
+        
+        .image-container:hover .hover-gif {
+        opacity: 1;
+        }
+
+
+/* Unsere Werte */
+  .werte {
+    display: flex;
+    padding-bottom: 50px;
 }
+
+@media (max-width: 650px) {
+    .werte {
+    display: block;
+}
+}
+
+.wert {
+    background-color: #333333;
+  padding: 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Zentriert den Inhalt vertikal */
+}
+
+@media (max-width: 650px) {
+    .wert {
+    margin: 0;
+    margin-bottom: 20px;
+}
+}
+
+
+.wert h3{
+    margin: 0;
+}
+
+.wert p{
+    margin: 0;
+}
+
+.wert:last-child {
+    margin-right: 0;
+  }

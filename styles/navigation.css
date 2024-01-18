@@ -1,21 +1,35 @@
 header {
-    padding: 20px;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+@media (max-width: 670px) {
+    header {
+    margin: 10px;}
+    
+}
+
 .logo img {
     height: 80px;
-    @media (max-width: 1200px) {
-        height: 70px;
-    }
-    @media (max-width: 830px) {
-        height: 60px;
-    }
-    @media (max-width: 640px) {
-        height: 50px;
-    }
+}
+
+@media (max-width: 1200px) {
+    .logo img {
+    height: 70px;}
+}
+@media (max-width: 830px) {
+    .logo img {
+    height: 60px;}
+}
+@media (max-width: 640px) {
+    .logo img {
+    height: 50px;}
+}
+@media (max-width: 400px) {
+    .logo img {
+    height: 45px;}
 }
 
 nav ul {
@@ -25,15 +39,16 @@ nav ul {
 
 nav li {
     margin-left: 20px;
-    gap: 40px;
     font-size: 20px;
-        
-        @media (max-width: 1200px) {
-            font-size: 16px; /* Adjust font size for smaller screens */
-        }
-        @media (max-width: 670px) {
-            font-size: 14px; /* Adjust font size for smaller screens */
-        }
+}
+    @media (max-width: 1200px) {
+    nav li {
+    font-size: 16px;}
+}  
+    @media (max-width: 670px) {
+        nav li {
+            margin-left: 10px;
+    font-size: 14px; }
 }
 
    a {
@@ -52,16 +67,18 @@ nav li {
     align-items: center;
     border-radius: 96px;
     border: 3px solid var(--vibrant-orange, #F4743B);
-
+}
     @media (max-width: 1200px) {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
+        .outline-button {
+        font-size: 16px; }
+}
     @media (max-width: 670px) {
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
+        .outline-button {
+        font-size: 14px; }
+}
     @media (max-width: 590px) {
-        display: none;
-    }
+        .outline-button {
+        display: none;}
 }
 
 .outline-button:hover  {
@@ -76,14 +93,16 @@ nav li {
     font-weight: 700;
     color: var(--vibrant-orange, #F4743B);
     font-size: 20px;
-        
-        @media (max-width: 1200px) {
-            font-size: 16px; /* Adjust font size for smaller screens */
-        }
-        @media (max-width: 670px) {
-            font-size: 14px; /* Adjust font size for smaller screens */
-        }
 }
+    @media (max-width: 1200px) {
+        .outline-button-link {
+    font-size: 16px;}
+}
+    @media (max-width: 670px) {
+        .outline-button-link {
+    font-size: 14px;}
+}
+
 .outline-button-link:hover {
     color: white;
 }
