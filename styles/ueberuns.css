@@ -25,7 +25,6 @@ video {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly; /* Stellt die gleichmäßige Verteilung sicher */
-            align-items: top;
             flex-wrap: wrap; /* Erlaubt den Elementen, in eine neue Zeile zu wechseln */
             margin-top: 80px;
         }
@@ -57,11 +56,11 @@ video {
             position: relative;
             padding-top: 100%; /* Verhältnis für die Höhe (z.B. 4:3 Verhältnis wäre 75%) */
             min-height: 40px;        
-            img {
-                object-fit: contain;
-            }
         }
         
+        .image-container img {
+            object-fit: contain;
+        }
         
         .team img {
         position: absolute;

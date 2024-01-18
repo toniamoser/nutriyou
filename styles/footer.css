@@ -8,7 +8,6 @@
     max-width: 100%;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: left;
     gap: 20px;
     padding: 40px 150px;
   }
@@ -64,17 +63,12 @@
   .footerlogo {
     max-width: 300px;
   }
-  @media (max-width: 900px){
-    .footerlogo {
-    max-width: 50% vw;}
-    }
 
   .footer-contact {
     flex: 3;
   }
   @media (max-width: 900px){
     .footer-contact {
-    max-width: 50% vw;
     margin: 20px 0;}
     }
 
@@ -83,7 +77,6 @@
   }
   @media (max-width: 900px){
     .footernav {
-    max-width: 50% vw;
     margin: 20px 0;}
     }
 
@@ -92,7 +85,6 @@
   }
   @media (max-width: 900px){
     .footerlinks {
-    max-width: 50% vw;
     margin: 20px 0;}
     }
     @media (max-width: 1200px) {

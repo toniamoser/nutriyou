@@ -159,11 +159,6 @@ main {
   .img-teaser {
     width: 40%;}
 
-    @media (max-width: 650px) {
-      .img-teaser {
-      max-width: 100% vw;}
-    }
-
   @media (max-width: 650px) {
     .img-we {
     max-width:80vw;}
