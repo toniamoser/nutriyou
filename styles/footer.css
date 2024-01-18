@@ -75,14 +75,37 @@
   .footernav {
     flex: 3;
   }
+
+  .footernav ul {
+   padding-left: 0;
+   margin-top: 0;
+
+  }
+
   @media (max-width: 900px){
     .footernav {
     margin: 20px 0;}
     }
 
+  .footernav li {
+    margin: 5px 0;
+  }
+
   .footerlinks {
     flex: 2;
+    display: flex;
+    flex-direction: column;
   }
+
+.footerlinks ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.footerlinks li {
+  padding-bottom: 10px;
+}
+
   @media (max-width: 900px){
     .footerlinks {
     margin: 20px 0;}
@@ -97,6 +120,11 @@
     .footerlinks {
       font-size: 12px;
       line-height: 18px;}
+  }
+
+  .impressum {
+    margin: 0;
+    padding: 0;
   }
   
 

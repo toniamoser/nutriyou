@@ -1,45 +1,13 @@
-/* .box {
-margin: 0 auto;
-max-width: 700px;
-  } */
-  
-  /* section.header {
-    width:calc(100vw - 17px);
-    overflow: visible;
-  }
-  body img.hero {
-    right:-92px;
-  } */
-  
-  /* .header-overflow {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    left: 0; /* Anpassung: Links ausgerichtet
-  } */
-  
-  /* .header-pic-subpage {
-    overflow: hidden;
-    max-width: 100%; 
-    margin: 0 auto;
-  }
-  
-  .header img {
-    position: relative;
-    right: 0; 
-  }
-   */
-
-  .text {
-      padding: 100px 150px;
+.text {
+    padding: 100px 150px;
   }
 
   @media (max-width: 950px) {
-    .impressum{
+    .text{
     padding: 50px 0px;}
   }
 
-  .impressum h2 {
+  .text h2 {
     padding-top: 40px;
   }
   

@@ -155,15 +155,12 @@ margin-top: 5px;
 }
 
 .button-grey {
-    display: flex;
+    padding: 10px 20px;
     background-color: #333333;
      font-size: 20px;
     font-weight: 700;
     color: white;
      cursor: pointer;
-     padding: 10px 20px;
-     justify-content: center;
-     align-items: center;
      gap: 10px;
      border-radius: 96px;
      border: none;
@@ -172,15 +169,15 @@ margin-top: 5px;
     .button-grey {
     font-size: 14px;
     padding: 10px 20px;
-     border-radius: 96px;}
+    }
  }
 
     @media (max-width: 650px) {
     .button-grey {
     font-size: 12px;
     padding: 10px 20px;
-    border-radius: 96px;}
-}
+    border-radius: 96px}
+    }
  
  .button-grey:hover {
     background-color:#000;

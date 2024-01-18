@@ -25,11 +25,12 @@
                 <li> <a href="angebot.html">Angebot</a></li>
                 <li> <a href="ueberuns.html">Über uns</a></li>
                 <li>
-                    <button class="outline-button"><a class="outline-button-link" href="https://www.apple.com/chde/app-store/" target="_blank">Jetzt loslegen!</a></button>
+                    <a class="outline-button outline-button-link" href="https://www.apple.com/chde/app-store/" target="_blank">Jetzt loslegen!</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="header">
             <section class="header-text">
@@ -37,7 +38,7 @@
                 <div class="tel"><p> 079 833 39 00</p></div>
                 <div class="mail"><p> hallo@nutiyou.ch</p></div>
                 <br>
-                <button class="button-grey"><a href="https://support.google.com/business/answer/3474122?hl=de" target="_blank">Feedback abgeben</a></button>
+                <a class="button-grey" href="https://support.google.com/business/answer/3474122?hl=de" target="_blank">Feedback abgeben</a>
             </section>
             <div class="header-pic">
                 <img class="hero" src="img/header/header-kontakt-min.png" alt="Ricebowl with avocado.">
@@ -56,7 +57,7 @@
             <div class="funktion">
                 <h2>Sag Hallo!</h2>
                 <br/>
-                <form action="">
+                <form>
                     <div class="form-group">
                         <div class="form-wrapper">
                             <label for="vorname">Vorname*</label>
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                     <br/>
-                    <button class="outline-button" style="display:block" ><a class="outline-button-link" href="formular-bestaetigt.html">Senden</a></button>
+                    <a class="outline-button centered outline-button-link" style="display:block" href="formular-bestaetigt.html">Senden</a>
                 </form>
             </div>
         </section>
@@ -98,8 +99,8 @@
             </div>
             <br/>
             <div class="aligned-buttons" style="display: flex;">
-                <button class="button-grey" style="margin-right: 20px;"><a href="https://www.google.com/maps/dir//Tomatenhaus,+Hauptstrasse+1,+8362+Balterswil+TG/@47.4505973,8.9282374,16.35z/data=!4m17!1m7!3m6!1s0x479a951f36baaaab:0x3214e3c9c5155fbd!2sTomatenhaus!8m2!3d47.4505344!4d8.9309212!16s%2Fg%2F11h4djl78b!4m8!1m0!1m5!1m1!1s0x479a951f36baaaab:0x3214e3c9c5155fbd!2m2!1d8.9309234!2d47.4505318!3e2?hl=de-DE&entry=ttu" target="_blank">Mit dem Auto</a></button>
-                <button class="button-grey"><a href="https://www.sbb.ch/de" target="_blank">Mit dem Zug</a></button>
+                <a class="button-grey" style="margin-right: 20px;" href="https://www.google.com/maps/dir//Tomatenhaus,+Hauptstrasse+1,+8362+Balterswil+TG/@47.4505973,8.9282374,16.35z/data=!4m17!1m7!3m6!1s0x479a951f36baaaab:0x3214e3c9c5155fbd!2sTomatenhaus!8m2!3d47.4505344!4d8.9309212!16s%2Fg%2F11h4djl78b!4m8!1m0!1m5!1m1!1s0x479a951f36baaaab:0x3214e3c9c5155fbd!2m2!1d8.9309234!2d47.4505318!3e2?hl=de-DE&entry=ttu" target="_blank">Mit dem Auto</a>
+                <a class="button-grey" href="https://www.sbb.ch/de" target="_blank"> Mit dem Zug</a>
             </div>
         </section>
         
@@ -107,8 +108,7 @@
 <div>
     <img style="width:100%;max-width: 100%;" src="img/kontakt/karte.png" alt="location.">
 </div>
-        </body>
-
+       
         <footer id="footer-main">
             <section class="app-download">
               <h2>Starte dein gesundes Leben jetzt!</h2>
@@ -137,18 +137,22 @@
                     </div>
         
                    <div class="footernav">
-                     <ul class="p-small-bold"> <a href="angebot.html">Angebot</a> </ul> 
-                     <hr class="divider">
-                     <ul class="p-small-bold"> <a href="ueberuns.html">Über uns</a> </ul> 
-                     <hr class="divider">
-                     <ul class="p-small-bold"> <a href="kontakt.html">Kontakt</a> </ul> 
+                    <ul>
+                        <li class="p-small-bold"> <a href="angebot.html">Angebot</a> </li> 
+                        <hr class="divider">
+                        <li class="p-small-bold"> <a href="ueberuns.html">Über uns</a> </li> 
+                        <hr class="divider">
+                        <li class="p-small-bold"> <a href="kontakt.html">Kontakt</a> </li>
+                    </ul>
                    </div>
             
                    <div class="footerlinks">
                     <div class="impressum">
-                      <ul class="textlink"> <a href="impressum.html">Impressum</a> </ul> 
-                      <ul class="textlink"> <a href="#">Datenschutz</a> </ul> 
-                      <ul class="textlink"> <a href="#">AGB</a> </ul> 
+                        <ul>
+                            <li class="textlink"> <a href="impressum.html">Impressum</a> </li> 
+                            <li class="textlink"> <a href="#">Datenschutz</a> </li> 
+                            <li class="textlink"> <a href="#">AGB</a> </li> 
+                        </ul>
                     </div>
                     <div class="socials">
                         <a href="https://www.instagram.com" target="_blank"><img class="smicon" src="img/footer/socials/instagram.svg" alt="Icon Instagram"></a>
@@ -160,4 +164,5 @@
                </div>
               
             </footer>
+        </body>
 </html>

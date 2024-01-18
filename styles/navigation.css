@@ -60,7 +60,6 @@ nav li {
 
 
 .outline-button {
-   background-color: transparent;
     cursor: pointer;
     padding: 10px 20px;
     justify-content: center;
@@ -93,6 +92,7 @@ nav li {
     font-weight: 700;
     color: var(--vibrant-orange, #F4743B);
     font-size: 20px;
+    background-color: transparent;
 }
     @media (max-width: 1200px) {
         .outline-button-link {
